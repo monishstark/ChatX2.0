@@ -1,0 +1,50 @@
+/* Telegram Component */
+.telegram {
+  display: grid;
+  grid-template-columns: 400px 1fr; /* Sidebar width fixed, chat window expands */
+  height: 100vh;
+  background-color: #223b4e;
+  overflow: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sidebar__header,
+.sidebar__bottom {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar__threads {
+  flex: 1;
+  padding: 8px 16px;
+  overflow-y: auto;
+}
+
+/* ChatWindow Styling */
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .telegram {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+  
+  .sidebar {
+      display: none; /* Hide sidebar on mobile, could be toggled via a button */
+  }
+}

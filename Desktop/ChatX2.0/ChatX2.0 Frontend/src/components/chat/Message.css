@@ -1,0 +1,50 @@
+/* Container for each message */
+.message-container {
+    display: flex;
+    width: 100%;
+    margin: 5px 0; /* Space between messages */
+}
+
+/* Align sender messages to the right */
+.message--sender {
+    justify-content: flex-end;
+    background-color:#162733
+}
+
+/* Align receiver messages to the left */
+.message--receiver {
+    justify-content: flex-start;
+    background-color:#162733
+}
+
+/* Styles for the message bubble */
+.message {
+    max-width: 60%; /* Bubble width limit */
+    padding: 10px 15px;
+    margin: 0;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    color: #333;
+    position: relative;
+}
+
+/* Receiver message style (left-aligned, light blue) */
+.message--receiver .message {
+    background-color: #e6f7ff; /* Light blue for receiver */
+}
+
+/* Sender message style (right-aligned, light green) */
+.message--sender .message {
+    background-color: #daf8cb; /* Light green for sender */
+}
+
+/* Timestamp styling */
+.message__timestamp {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 5px;
+    text-align: right;
+}

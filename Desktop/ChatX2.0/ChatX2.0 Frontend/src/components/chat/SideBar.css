@@ -1,0 +1,111 @@
+/* Sidebar container */
+.sidebar {
+    flex: 0.25;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    border-right: 1px solid rgba(190, 190, 190, 0.1);
+    background-color: #1e3a4b;
+    color: #fff;
+  }
+  
+  /* Header section */
+  .sidebar__header {
+    display: flex;
+    height: 60px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #223b4e;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Search bar */
+  .sidebar__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #3b6db4;
+    border-radius: 25px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar__search:hover {
+    background-color: #4a82c9;
+  }
+  
+  .sidebar__input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 0.9rem;
+    padding-left: 5px;
+    flex: 1;
+  }
+  
+  /* Icon Styling */
+  .sidebar__searchIcon,
+  #sidebar__button {
+    color: #fff;
+    padding-right: 5px;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar__button {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  #sidebar__button:hover {
+    color: #4a82c9;
+  }
+  
+  /* Threads section */
+  .sidebar__threads {
+    overflow-y: auto;
+    flex: 1;
+    padding: 10px 15px;
+    scrollbar-width: thin;
+    scrollbar-color: #4a82c9 transparent;
+  }
+  
+  .sidebar__threads::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .sidebar__threads::-webkit-scrollbar-thumb {
+    background-color: #4a82c9;
+    border-radius: 10px;
+  }
+  
+  /* Bottom section */
+  .sidebar__bottom {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e3a4b;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar__bottom_avatar {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .sidebar__bottom_avatar:hover {
+    opacity: 0.7;
+  }
+  
+  .sidebar__bottom > .MuiIconButton-root {
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar__bottom > .MuiIconButton-root:hover {
+    color: #4a82c9;
+  }
+  
